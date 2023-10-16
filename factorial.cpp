@@ -2,12 +2,12 @@
 #include<math.h>
 int main ()
 {
-	int n,f;
-	scanf("%d",n);
-	while (n>1)
+	int N,i=1,f;
+	scanf("%d",&N);
+	for (i=1;i<=N;i++)
 	{
-	f=n*(n-1);
-	n--;
-    }
-printf ("%d",f);
+		f=f*i;
+	}
+	printf("%d",f);
+	return 0;
 }
